@@ -7,21 +7,22 @@ Every part of the whole file is blocked from time to time and you have to wait (
 
 ## Installation
 
-Simply you have to find "reconnection method" in JDownloader and select "external reconnection tool". So, you can create an .exe with PyInstaller and directly select the reconnector.exe to launch in reconnection method. 
+Simply you have to find "reconnection method" in JDownloader and select "external reconnection tool". So, you can directly select the reconnect.exe to launch in reconnection method. 
 
 ## Usage
-First, you have to set your vodafone station admin password here:
+You have to set your vodafone station admin password through user input (or launch reconnect.exe):
 ```python
 password = ""  # put here your vodafone station password
 ```
 -> It isn't your internet connection password! 
 
-Then, you can create an .exe with PyInstaller, work correcly also with warnings.
+You can use [reconnect.exe](https://github.com/GiuseppeLG/JDownloader-Vodafone-Reconnector/tree/master/dist)
+it's created with PyInstaller, work correcly also with warnings, you can launch this on Unix to unix executable:
 ```bash
 pip install PyInstaller
 PyInstaller --onefile reconnect.py
 ```
-The .exe will be generated in dist folder.
+It will be generated in dist folder.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
